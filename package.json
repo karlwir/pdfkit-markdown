@@ -17,7 +17,8 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "dev": "tsc-watch --onSuccess \"tsx example/example.ts\""
   },
   "files": [
     "dist",
@@ -28,7 +29,12 @@
     "@types/pdfkit": "^0.12.9",
     "mdast": "^3.0.0",
     "pdfkit": "^0.13.0",
-    "typescript": "^5.0.3"
+    "remark-parse": "^11.0.0",
+    "ts-node": "^10.9.2",
+    "tsc-watch": "^6.2.0",
+    "typescript": "^5.0.3",
+    "unified": "^11.0.5",
+    "tsx": "^4.19.0"
   },
   "peerDependencies": {
     "mdast": ">= 3.0.0 < 4.0.0",
